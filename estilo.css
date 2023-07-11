@@ -5,13 +5,19 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --main-bg-color: #1cb698;
+    --main-white: #fff;
+    --main-bg-dark: #1e2326;
+    --main-bg-greydark: #252a2e;
+}
 html{
     /* me permite deslizar cuando hago click en los links del menu */
     scroll-behavior: smooth;
 }
 /* MENU */
 .container-header{
-    background: #1e2326;
+    background: var(--main-bg-dark);
     position: fixed;
     width: 100%;
     top: 0;
@@ -29,7 +35,7 @@ html{
 .container-header header .logo a{
     font-family: 'Poppins';
     font-size: 36px;
-    color: #1cb698;
+    color: var(--main-bg-color);
     text-decoration: none;
 }
 .container-header header ul{
@@ -38,18 +44,18 @@ html{
 }
 .container-header header nav ul li a{
     text-align: none;
-    color: #fff;
+    color: var(--main-white);
     margin: 0 15px;
     padding: 3px;
     transition: .5s;
     text-decoration: none;
 }
 .container-header header nav ul li a:hover{
-    color: #1cb698;
+    color: var(--main-bg-color);
 }
 .nav-responsive{
-    background-color: #1cb698;
-    color: #fff;
+    background-color: var(--main-bg-color);
+    color: var(--main-white);
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -60,13 +66,13 @@ html{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(img/fondo.jpg);
     background-size: cover;
     height: 100vh;
-    color: #fff;
+    color: var(--main-white);
     display: flex;
     align-items: center;
 }
 .home .banner-content{
     padding: 20px;
-    background-color:  #1e2326;
+    background-color:  var(--main-bg-dark);
     max-width:  450px;
     margin: auto;
     text-align: center;
@@ -74,7 +80,7 @@ html{
 }
 .home .banner-content img{
     margin-top: 40px;
-    border: 10px solid #1cb698;
+    border: 10px solid var(--main-bg-color);
     display: block;
     width: 80%;
     margin: auto;
@@ -90,10 +96,10 @@ html{
     font-weight: normal;
 }
 .home .banner-content .socialmedia a{
-    color: #fff;
+    color: var(--main-white);
     display: inline-block;
     text-decoration: none;
-    border: 1px solid #fff;
+    border: 1px solid var(--main-white);
     border-radius: 100%;
     width: 42px;
     height: 42px;
@@ -103,12 +109,12 @@ html{
     transition: .3s;
 }
 .home .banner-content .socialmedia a:hover{
-    background-color: #1cb698;
+    background-color: var(--main-bg-color);
 }
 /* SECTION ABOUT ME */
 .aboutme{
-    background-color: #1e2326;
-    color: #fff;
+    background-color: var(--main-bg-dark);
+    color: var(--main-white);
     padding: 50px 20px;
 }
 .aboutme .section-content{
@@ -127,7 +133,7 @@ html{
     margin-bottom: 20px;
 }
 .aboutme .section-content p span{
-    color: #1cb698;
+    color: var(--main-bg-color);
     font-weight: bold;
 }
 .aboutme .row{
@@ -149,11 +155,11 @@ html{
 }
 .aboutme .row .column ul li strong{
     display: inline-block;
-    color: #1cb698;
+    color: var(--main-bg-color);
     width: 130px;
 }
 .aboutme .row .column ul li span{
-    background-color: #1cb698;
+    background-color: var(--main-bg-color);
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -165,7 +171,7 @@ html{
 .aboutme .row .column .hobbies-content .hobbies{
     width: 100px;
     height: 100px;
-    background-color: #252a2e;
+    background-color: var(--main-bg-greydark);
     border-radius: 10px;
     margin: 0 15px 15px 0;
     display: flex;
@@ -175,7 +181,7 @@ html{
     transition: .3s;
 }
 .aboutme .row .column .hobbies-content .hobbies:hover{
-    background-color: #1cb698;
+    background-color: var(--main-bg-color);
 }
 .aboutme .row .column .hobbies-content .hobbies i{
     font-size: 30px;
@@ -184,12 +190,12 @@ html{
 .aboutme button{
     cursor: pointer;
     background-color: transparent;
-    border:  2px solid #fff;
+    border:  2px solid var(--main-white);
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
-    color: #fff;
+    color: var(--main-white);
     position: relative;
     z-index: 10;
 }
@@ -199,7 +205,7 @@ html{
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: #1cb698;
+    background-color: var(--main-bg-color);
     z-index: -1;
     transition: 1s;
 }
@@ -208,8 +214,8 @@ html{
 }
 /* SECTION SKILLS */
 .skills{
-    background-color: #1e2326;
-    color: #fff;
+    background-color: var(--main-bg-dark);
+    color: var(--main-white);
     padding: 50px 20px;
 }
 .skills .section-content{
@@ -247,7 +253,7 @@ html{
     margin-bottom: 30px;
 }
 .skills .skill .progress{
-    background-color: #1cb698;
+    background-color: var(--main-bg-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -257,7 +263,7 @@ html{
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: #1cb698;
+    background-color: var(--main-bg-color);
     border-radius: 50px;
     line-height: 40px;
     text-align: center;
@@ -300,4 +306,70 @@ html{
 @keyframes dedication{
     0%{width: 0%;}
     100%{width: 85%;}
+}
+/* SECTION CURRICULUM */
+.curriculum{
+    background-color: var(--main-bg-dark);
+    color: var(--main-white);
+    padding: 50px 20px;
+}
+.curriculum .section-content{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Poppins';
+    text-align: center;
+    padding: 20px 0;
+}
+.curriculum .row{
+    display: flex;
+}
+.curriculum .row .column{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .row .column h3{
+    font-size: 28px;
+    font-family: 'Poppins';
+    margin-bottom: 25px;
+}
+.curriculum .row .left{
+    border-right: 2px solid var(--main-bg-greydark);
+
+}
+.curriculum .row .right{
+    border-left: 2px solid var(--main-bg-greydark);  
+}
+.curriculum .row .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: var(--main-bg-greydark);
+    position: relative;
+}
+.curriculum .row .item h4{ 
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .row .item .place{ 
+    color: var(--main-bg-color);
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .row .item .date{
+    display: block;
+    color: var(--main-bg-color);
+}
+.curriculum .row .item p{
+    line-height: 24px;
+}
+.curriculum .row .l{
+    border-right: 2px solid var(--main-bg-color);
+    margin-right: 20px;
+}
+.curriculum .row .r{
+    border-left: 2px solid var(--main-bg-color);
+    margin-left: 20px;
 }
