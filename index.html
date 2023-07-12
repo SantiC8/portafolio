@@ -16,15 +16,15 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#aboutme">ABOUT ME</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#certifications">CERTIFICATIONS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#home" onclick="select()">HOME</a></li>
+                    <li><a href="#aboutme" onclick="select()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="select()">CURRICULUM</a></li>
+                    <li><a href="#certifications" onclick="select()">CERTIFICATIONS</a></li>
+                    <li><a href="#contact" onclick="select()">CONTACT</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="showMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -297,7 +297,7 @@
 
     <!-- CONTACT -->
     <section id="contact" class="contact">
-        <h2>CONTACTO</h2>
+        <h2>CONTACT</h2>
         <div class="row">
             <!-- FORM -->
             <div class="column">
@@ -314,5 +314,17 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
+    <footer>
+        <a href="#home" class="up">
+            <i class="fa-solid fa-angles-up"></i>
+        </i></a>
+        <div class="socialmedia">
+            <a href="https://www.linkedin.com/in/santiago-curetti/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://trailblazer.me/id/scuretti" target="_blank"><i class="fa-brands fa-salesforce"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
